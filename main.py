@@ -4,7 +4,6 @@ from decouple import config
 
 bot = telebot.TeleBot(config('TELEGRAM_TOKEN'))
 
-
 @bot.message_handler(commands=['start'])
 def greet(message):
   print(str(message.from_user.first_name) + " - " + str(message.from_user.id))
