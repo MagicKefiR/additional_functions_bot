@@ -15,7 +15,6 @@ from telethon.tl.types import ChannelParticipantsSearch, InputChannel
 
 bot = telebot.TeleBot(config('TELEGRAM_TOKEN'))
 
-
 @bot.message_handler(commands=['start'])
 def send_start(message):
     bot.send_message(message.chat.id,
